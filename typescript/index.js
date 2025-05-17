@@ -1,5 +1,5 @@
-console.log("hello world");
+console.log('hello world');
 function myNameLogger(name) {
-    console.log(name);
+  console.log(name);
 }
-myNameLogger("Pourya Soleimani");
+myNameLogger('Pourya Soleimani');
