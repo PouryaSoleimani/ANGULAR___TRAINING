@@ -11,4 +11,4 @@ function add(num1, num2, isShow) {
         return 'Return is Restricted';
     }
 }
-console.log(add(5, 2, false));
+console.log(add(5, 2, true));
