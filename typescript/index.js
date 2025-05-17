@@ -33,3 +33,17 @@ var tupleExample2 = [20, 'pourya', true, 30];
 console.info('TUPLE 1', tupleExample2);
 tupleExample2 = [50, 'ali', false, 40];
 console.info('TUPLE 2', tupleExample2);
+// ENUMS --> Enum is a special "class" that represents a group of constants (unchangeable variables).
+var person = {
+    name: 'Pourya',
+    age: 25,
+    isMale: true,
+    hobbies: ['Sports', 'Cooking'],
+    role: 'ADMIN',
+};
+if (person.role === 'ADMIN') {
+    console.log('user is an admin');
+}
+else {
+    console.log('user is not an admin');
+}
