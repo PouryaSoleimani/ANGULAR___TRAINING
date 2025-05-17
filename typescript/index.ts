@@ -6,11 +6,12 @@ function myNameLogger(name: string) {
 
 myNameLogger('Pourya Soleimani');
 
-function add(num1: number, num2: number, isShow: boolean) {
+function add(num1: number, num2: number, isShow: boolean, resultText: string) {
+  const result = num1 + num2;
   if (isShow) {
-    return num1 + num2;
+    return resultText + '    ' + result;
   } else {
     return 'Return is Restricted';
   }
 }
-console.log(add(5, 2, true));
+console.log(add(5, 2, true, 'RESULT IS'));
