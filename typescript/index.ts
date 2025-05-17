@@ -15,6 +15,7 @@ function add(num1: number, num2: number, isShow: boolean, resultText: string) {
     return 'Return is Restricted';
   }
 }
+
 console.log(add(5, 2, true, 'RESULT IS'));
 
 //^ ARRAYS
@@ -31,7 +32,7 @@ exampleArray[0] = true;
 exampleArray[1] = 'REZA';
 exampleArray[2] = 10;
 
-// ^ TUPLES
+//  TUPLES --> Cannot use other value types instead of the specified types
 let tupleExample: [string, number, boolean] = ['hello', 10, true];
 tupleExample[0] = 'world';
 
