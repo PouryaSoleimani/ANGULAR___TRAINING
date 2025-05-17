@@ -52,7 +52,13 @@ enum Roles {
   USER = 5,
 }
 
-let person: { name: string; age: number; isMale: boolean; hobbies: string[]; role: Roles.ADMIN } = {
+let person: {
+  name: string;
+  age: number;
+  isMale: boolean;
+  hobbies: string[];
+  role: Roles.ADMIN;
+} = {
   name: 'Pourya',
   age: 25,
   isMale: true,
