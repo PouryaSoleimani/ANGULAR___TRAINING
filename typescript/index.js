@@ -18,3 +18,5 @@ for (var _i = 0, myHobbies_1 = myHobbies; _i < myHobbies_1.length; _i++) {
     var hobby = myHobbies_1[_i];
     console.log(hobby);
 }
+console.log(myHobbies);
+console.log(myHobbies.map(function (hobby) { return hobby.toUpperCase(); }));

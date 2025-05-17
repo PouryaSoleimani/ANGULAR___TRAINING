@@ -22,3 +22,5 @@ const myHobbies = ['Sports', 'Cooking', 'Coding'];
 for (const hobby of myHobbies) {
   console.log(hobby);
 }
+console.log(myHobbies);
+console.log(myHobbies.map((hobby) => hobby.toUpperCase()));
