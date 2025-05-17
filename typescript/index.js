@@ -54,27 +54,27 @@ var myProduct = {
 };
 switch (myProduct.category) {
     case Categories.TOP:
-        console.log('This is a top');
+        console.log('This is a TOP');
         break;
     case Categories.PANTS:
-        console.log('This is a pants');
+        console.log('This is a PANT}');
         break;
     case Categories.SHOES:
-        console.log('This is a shoes');
+        console.log('This is a SHOE');
         break;
     case Categories.CAPS:
-        console.log('This is a caps');
+        console.log('This is a CAP');
         break;
     case Categories.SOCKS:
-        console.log('This is a socks');
+        console.log('This is a SOCK');
         break;
     case Categories.GLOVES:
-        console.log('This is a gloves');
+        console.log('This is a GLOVE');
         break;
     case Categories.JACKETS:
-        console.log('This is a jacket');
+        console.log('This is a JACKET');
         break;
     default:
-        console.log('This is an unknown category');
+        console.log('This is an UNKNOWN CATEGORY');
         break;
 }
