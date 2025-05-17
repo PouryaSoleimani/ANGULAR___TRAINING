@@ -34,36 +34,47 @@ console.info('TUPLE 1', tupleExample2);
 tupleExample2 = [50, 'ali', false, 40];
 console.info('TUPLE 2', tupleExample2);
 // ENUMS --> Enum is a special "class" that represents a group of constants (unchangeable variables).
-var Roles;
-(function (Roles) {
-    Roles[Roles["ADMIN"] = 0] = "ADMIN";
-    Roles[Roles["READ_ONLY"] = 1] = "READ_ONLY";
-    Roles[Roles["AUTHOR"] = 2] = "AUTHOR";
-    Roles[Roles["TEACHER"] = 3] = "TEACHER";
-    Roles[Roles["USER"] = 4] = "USER";
-})(Roles || (Roles = {}));
-var person = {
-    name: 'Pourya',
-    age: 25,
-    isMale: true,
-    hobbies: ['Sports', 'Cooking'],
-    role: Roles.AUTHOR,
+var Categories;
+(function (Categories) {
+    Categories[Categories["TOP"] = 0] = "TOP";
+    Categories[Categories["PANTS"] = 1] = "PANTS";
+    Categories[Categories["SHOES"] = 2] = "SHOES";
+    Categories[Categories["CAPS"] = 3] = "CAPS";
+    Categories[Categories["SOCKS"] = 4] = "SOCKS";
+    Categories[Categories["GLOVES"] = 5] = "GLOVES";
+    Categories[Categories["JACKETS"] = 6] = "JACKETS";
+})(Categories || (Categories = {}));
+var myProduct = {
+    id: 1,
+    title: 'ADIDAS T-SHIRT',
+    price: 100,
+    description: 'This is a product',
+    category: Categories.TOP,
+    isSale: true,
 };
-if (person.role === Roles.ADMIN) {
-    console.log('USER IS AN ADMIN');
-}
-else if (person.role === Roles.READ_ONLY) {
-    console.log('USER IS NOT AN ADMIN , ITS READ ONLY');
-}
-else if (person.role === Roles.AUTHOR) {
-    console.log('USER IS AN AUTHOR');
-}
-else if (person.role === Roles.TEACHER) {
-    console.log('USER IS AN TEACHER');
-}
-else if (person.role === Roles.USER) {
-    console.log('USER IS AN USER');
-}
-else {
-    console.log('USER IS AN UNKNOWN');
+switch (myProduct.category) {
+    case Categories.TOP:
+        console.log('This is a top');
+        break;
+    case Categories.PANTS:
+        console.log('This is a pants');
+        break;
+    case Categories.SHOES:
+        console.log('This is a shoes');
+        break;
+    case Categories.CAPS:
+        console.log('This is a caps');
+        break;
+    case Categories.SOCKS:
+        console.log('This is a socks');
+        break;
+    case Categories.GLOVES:
+        console.log('This is a gloves');
+        break;
+    case Categories.JACKETS:
+        console.log('This is a jacket');
+        break;
+    default:
+        console.log('This is an unknown category');
+        break;
 }
