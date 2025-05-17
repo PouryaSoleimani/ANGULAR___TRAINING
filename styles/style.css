@@ -1,19 +1,26 @@
 body {
   background-color: #141414;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .angular__text {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
+  width: 50%;
+  text-align: center;
   color: #910000;
-  margin-top: 100px;
-  margin-left: 100px;
-  background-color: #000;
+  background-color: #ffffff;
   font-size: 50px;
   font-weight: bolder;
   padding: 3rem;
   border-radius: 30px;
   border: 6px solid #910000;
+}
+.angular__text:hover {
+  color: #910000;
+  background-color: #000000;
+  border: 6px solid #910000;
+  box-shadow: 0 0 10px #910000;
 }
