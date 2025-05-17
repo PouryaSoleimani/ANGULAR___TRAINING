@@ -45,11 +45,11 @@ console.info('TUPLE 2', tupleExample2);
 
 // ENUMS --> Enum is a special "class" that represents a group of constants (unchangeable variables).
 enum Roles {
-  ADMIN = 1,
-  READ_ONLY = 2,
-  AUTHOR = 3,
-  TEACHER = 4,
-  USER = 5,
+  ADMIN,
+  READ_ONLY,
+  AUTHOR,
+  TEACHER,
+  USER,
 }
 
 let person: {
@@ -57,18 +57,25 @@ let person: {
   age: number;
   isMale: boolean;
   hobbies: string[];
-  role: Roles.ADMIN;
+  role: Roles;
 } = {
   name: 'Pourya',
   age: 25,
   isMale: true,
   hobbies: ['Sports', 'Cooking'],
-  role: Roles.ADMIN,
+  role: Roles.AUTHOR,
 };
 
-if (person.role === 1) {
+if (person.role === Roles.ADMIN) {
   console.log('USER IS AN ADMIN');
-  console.log(Roles.ADMIN);
+} else if (person.role === Roles.READ_ONLY) {
+  console.log('USER IS NOT AN ADMIN , ITS READ ONLY');
+} else if (person.role === Roles.AUTHOR) {
+  console.log('USER IS AN AUTHOR');
+} else if (person.role === Roles.TEACHER) {
+  console.log('USER IS AN TEACHER');
+} else if (person.role === Roles.USER) {
+  console.log('USER IS AN USER');
 } else {
-  console.log('USER IS NOT AN ADMIN');
+  console.log('USER IS AN UNKNOWN');
 }

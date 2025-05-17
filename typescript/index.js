@@ -36,23 +36,34 @@ console.info('TUPLE 2', tupleExample2);
 // ENUMS --> Enum is a special "class" that represents a group of constants (unchangeable variables).
 var Roles;
 (function (Roles) {
-    Roles[Roles["ADMIN"] = 1] = "ADMIN";
-    Roles[Roles["READ_ONLY"] = 2] = "READ_ONLY";
-    Roles[Roles["AUTHOR"] = 3] = "AUTHOR";
-    Roles[Roles["TEACHER"] = 4] = "TEACHER";
-    Roles[Roles["USER"] = 5] = "USER";
+    Roles[Roles["ADMIN"] = 0] = "ADMIN";
+    Roles[Roles["READ_ONLY"] = 1] = "READ_ONLY";
+    Roles[Roles["AUTHOR"] = 2] = "AUTHOR";
+    Roles[Roles["TEACHER"] = 3] = "TEACHER";
+    Roles[Roles["USER"] = 4] = "USER";
 })(Roles || (Roles = {}));
 var person = {
     name: 'Pourya',
     age: 25,
     isMale: true,
     hobbies: ['Sports', 'Cooking'],
-    role: Roles.ADMIN,
+    role: Roles.AUTHOR,
 };
-if (person.role === 1) {
+if (person.role === Roles.ADMIN) {
     console.log('USER IS AN ADMIN');
-    console.log(Roles.ADMIN);
+}
+else if (person.role === Roles.READ_ONLY) {
+    console.log('USER IS NOT AN ADMIN , ITS READ ONLY');
+}
+else if (person.role === Roles.AUTHOR) {
+    console.log('USER IS AN AUTHOR');
+}
+else if (person.role === Roles.TEACHER) {
+    console.log('USER IS AN TEACHER');
+}
+else if (person.role === Roles.USER) {
+    console.log('USER IS AN USER');
 }
 else {
-    console.log('USER IS NOT AN ADMIN');
+    console.log('USER IS AN UNKNOWN');
 }
