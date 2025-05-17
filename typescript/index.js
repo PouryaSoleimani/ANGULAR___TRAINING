@@ -50,9 +50,9 @@ var person = {
     role: Roles.ADMIN,
 };
 if (person.role === 1) {
-    console.log('user is an Admin');
+    console.log('USER IS AN ADMIN');
     console.log(Roles.ADMIN);
 }
 else {
-    console.log('user is not an Admin');
+    console.log('USER IS NOT AN ADMIN');
 }

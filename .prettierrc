@@ -2,5 +2,6 @@
   "singleQuote": true,
   "trailingComma": "all",
   "printWidth": 900,
-  "tabWidth": 1
+  "tabWidth": 2,
+  "bracketSameLine": true
 }

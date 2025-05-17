@@ -1,19 +1,19 @@
 console.log('hello world');
 
 function myNameLogger(name: string) {
- console.log(name);
+  console.log(name);
 }
 
 myNameLogger('Pourya Soleimani');
 
 function add(num1: number, num2: number, isShow: boolean, resultText: string) {
- const result = num1 + num2;
+  const result = num1 + num2;
 
- if (isShow) {
-  return resultText + ' ' + result;
- } else {
-  return 'Return is Restricted';
- }
+  if (isShow) {
+    return resultText + ' ' + result;
+  } else {
+    return 'Return is Restricted';
+  }
 }
 
 console.log(add(5, 2, true, 'RESULT IS'));
@@ -22,7 +22,7 @@ console.log(add(5, 2, true, 'RESULT IS'));
 const myHobbies = ['Sports', 'Cooking', 'Coding'];
 
 for (const hobby of myHobbies) {
- console.log(hobby);
+  console.log(hobby);
 }
 console.log(myHobbies);
 console.log(myHobbies.map((hobby) => hobby.toUpperCase()));
@@ -45,30 +45,24 @@ console.info('TUPLE 2', tupleExample2);
 
 // ENUMS --> Enum is a special "class" that represents a group of constants (unchangeable variables).
 enum Roles {
- ADMIN = 1,
- READ_ONLY = 2,
- AUTHOR = 3,
- TEACHER = 4,
- USER = 5,
+  ADMIN = 1,
+  READ_ONLY = 2,
+  AUTHOR = 3,
+  TEACHER = 4,
+  USER = 5,
 }
 
-let person: {
- name: string;
- age: number;
- isMale: boolean;
- hobbies: string[];
- role: Roles.ADMIN;
-} = {
- name: 'Pourya',
- age: 25,
- isMale: true,
- hobbies: ['Sports', 'Cooking'],
- role: Roles.ADMIN,
+let person: { name: string; age: number; isMale: boolean; hobbies: string[]; role: Roles.ADMIN } = {
+  name: 'Pourya',
+  age: 25,
+  isMale: true,
+  hobbies: ['Sports', 'Cooking'],
+  role: Roles.ADMIN,
 };
 
 if (person.role === 1) {
- console.log('uUSER IS AN ADMIN');
- console.log(Roles.ADMIN);
+  console.log('USER IS AN ADMIN');
+  console.log(Roles.ADMIN);
 } else {
- console.log('USER IS NOT AN ADMIN');
+  console.log('USER IS NOT AN ADMIN');
 }
