@@ -17,6 +17,7 @@ function add(num1: number, num2: number, isShow: boolean, resultText: string) {
 }
 console.log(add(5, 2, true, 'RESULT IS'));
 
+//^ ARRAYS
 const myHobbies = ['Sports', 'Cooking', 'Coding'];
 
 for (const hobby of myHobbies) {
@@ -24,3 +25,8 @@ for (const hobby of myHobbies) {
 }
 console.log(myHobbies);
 console.log(myHobbies.map((hobby) => hobby.toUpperCase()));
+
+let exampleArray = [1, 5, 'HELLO', false];
+exampleArray[0] = true;
+exampleArray[1] = 'REZA';
+exampleArray[2] = 10;
