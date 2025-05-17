@@ -16,3 +16,9 @@ function add(num1: number, num2: number, isShow: boolean, resultText: string) {
   }
 }
 console.log(add(5, 2, true, 'RESULT IS'));
+
+const myHobbies = ['Sports', 'Cooking', 'Coding'];
+
+for (const hobby of myHobbies) {
+  console.log(hobby);
+}
