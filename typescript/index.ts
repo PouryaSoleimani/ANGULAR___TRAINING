@@ -37,3 +37,8 @@ let tupleExample: [string, number, boolean] = ['hello', 10, true];
 tupleExample[0] = 'world';
 
 console.info(tupleExample);
+
+let tupleExample2: [number, string, boolean, number] = [20, 'pourya', true, 30];
+console.info('TUPLE 1', tupleExample2);
+tupleExample2 = [50, 'ali', false, 40];
+console.info('TUPLE 2', tupleExample2);

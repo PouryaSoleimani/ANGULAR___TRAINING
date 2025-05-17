@@ -25,7 +25,11 @@ var exampleArray = [1, 5, 'HELLO', false];
 exampleArray[0] = true;
 exampleArray[1] = 'REZA';
 exampleArray[2] = 10;
-// ^ TUPLES
+//  TUPLES --> Cannot use other value types instead of the specified types
 var tupleExample = ['hello', 10, true];
 tupleExample[0] = 'world';
 console.info(tupleExample);
+var tupleExample2 = [20, 'pourya', true, 30];
+console.info('TUPLE 1', tupleExample2);
+tupleExample2 = [50, 'ali', false, 40];
+console.info('TUPLE 2', tupleExample2);
