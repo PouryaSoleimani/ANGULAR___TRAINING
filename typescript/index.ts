@@ -44,6 +44,11 @@ tupleExample2 = [50, 'ali', false, 40];
 console.info('TUPLE 2', tupleExample2);
 
 // ENUMS --> Enum is a special "class" that represents a group of constants (unchangeable variables).
+enum Roles {
+  ADMIN,
+  READ_ONLY,
+  AUTHOR,
+}
 let person: {
   name: string;
   age: number;
