@@ -13,6 +13,7 @@ function add(num1, num2, isShow, resultText) {
     }
 }
 console.log(add(5, 2, true, 'RESULT IS'));
+//^ ARRAYS
 var myHobbies = ['Sports', 'Cooking', 'Coding'];
 for (var _i = 0, myHobbies_1 = myHobbies; _i < myHobbies_1.length; _i++) {
     var hobby = myHobbies_1[_i];
@@ -20,3 +21,11 @@ for (var _i = 0, myHobbies_1 = myHobbies; _i < myHobbies_1.length; _i++) {
 }
 console.log(myHobbies);
 console.log(myHobbies.map(function (hobby) { return hobby.toUpperCase(); }));
+var exampleArray = [1, 5, 'HELLO', false];
+exampleArray[0] = true;
+exampleArray[1] = 'REZA';
+exampleArray[2] = 10;
+// ^ TUPLES
+var tupleExample = ['hello', 10, true];
+tupleExample[0] = 'world';
+console.info(tupleExample);

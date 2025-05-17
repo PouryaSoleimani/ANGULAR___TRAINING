@@ -30,3 +30,9 @@ let exampleArray = [1, 5, 'HELLO', false];
 exampleArray[0] = true;
 exampleArray[1] = 'REZA';
 exampleArray[2] = 10;
+
+// ^ TUPLES
+let tupleExample: [string, number, boolean] = ['hello', 10, true];
+tupleExample[0] = 'world';
+
+console.info(tupleExample);
