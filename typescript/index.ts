@@ -66,7 +66,7 @@ const myProduct: {
   title: 'ADIDAS T-SHIRT',
   price: 100,
   description: 'This is a product',
-  category: Categories.TOP,
+  category: Categories.GLOVES,
   isSale: true,
 };
 
