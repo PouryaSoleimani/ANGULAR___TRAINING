@@ -34,16 +34,22 @@ console.info('TUPLE 1', tupleExample2);
 tupleExample2 = [50, 'ali', false, 40];
 console.info('TUPLE 2', tupleExample2);
 // ENUMS --> Enum is a special "class" that represents a group of constants (unchangeable variables).
+var Roles;
+(function (Roles) {
+    Roles[Roles["ADMIN"] = 0] = "ADMIN";
+    Roles[Roles["READ_ONLY"] = 1] = "READ_ONLY";
+    Roles[Roles["AUTHOR"] = 2] = "AUTHOR";
+})(Roles || (Roles = {}));
 var person = {
     name: 'Pourya',
     age: 25,
     isMale: true,
     hobbies: ['Sports', 'Cooking'],
-    role: 'ADMIN',
+    role: Roles.ADMIN,
 };
-if (person.role === 'ADMIN') {
-    console.log('user is an admin');
+if (person.role === Roles.ADMIN) {
+    console.log('user is an Admin');
 }
 else {
-    console.log('user is not an admin');
+    console.log('user is not an Admin');
 }
