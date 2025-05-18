@@ -100,11 +100,13 @@ console.log('NAMES ===> ', combinedNames);
 
 // LITERALS TYPES --> A literal type is a type that is known to be one of a specific set of values.
 function combine2(input1: number | string, input2: number | string, resultConversion: 'as-number' | 'as-text') {
-  let result;
+  let result: number | string;
   if ((typeof input1 === 'number' && typeof input2 === 'number') || resultConversion === 'as-number') {
     result = +input1 + +input2;
   } else {
-    result = input1.toString() + input2.toString();
+    result = input1.toString() + ' ' + input2.toString();
   }
   return result;
 }
+console.log('%c NUMBER OUTPUT ====> ', 'color : hotpink', combine2(30, 26, 'as-number'));
+console.log('%c TEXT OUTPUT ====>', 'color : cornflowerblue', combine2('Pourya', 'Soleimani', 'as-text'));
