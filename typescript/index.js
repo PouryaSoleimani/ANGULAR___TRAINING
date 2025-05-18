@@ -110,7 +110,7 @@ console.log(typeof combineValues);
 //UNKNOW TYPE
 var userInput1 = 5;
 var userInput2 = 5;
-var string1 = userInput1;
+// let string1: string = userInput1;
 var string2 = userInput2;
-userInput1.slice(0, 5);
+// userInput1.slice(0, 5);
 userInput2.slice(0, 1);
