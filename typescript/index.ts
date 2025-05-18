@@ -131,6 +131,6 @@ function printResult(num: number): void {
 
 printResult(addFunction(5, 12));
 
-let combineValues = addFunction;
+let combineValues: Function = addFunction;
 console.log('COMBINED VALUE OUTPUT ===>', combineValues(8, 8));
 console.log(typeof combineValues);
