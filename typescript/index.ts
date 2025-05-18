@@ -76,3 +76,24 @@ if (usersOrder.status === ProductShippingStatus.PENDING) {
 } else {
   console.log('❓ YOUR PRODUCT IS UNKNOWN , PLEASE CONTACT CUSTOMER SUPPORT');
 }
+
+// UNION TYPES --> A union type is a type formed from two or more other types, representing values that may be any one of those types.
+
+// We use the | symbol to separate each type.
+type Combinable = number | string;
+
+function combine(input1: Combinable, input2: Combinable) {
+  if (typeof input1 === 'number' && typeof input2 === 'number') {
+    const result = input1 + input2;
+    return result;
+  } else {
+    const result = input1.toString() + input2.toString();
+    return result;
+  }
+}
+
+const combinedAges = combine(30, 26);
+console.log('AGES ===> ', combinedAges);
+
+const combinedNames = combine('Pourya', 'Soleimani');
+console.log('NAMES ===> ', combinedNames);

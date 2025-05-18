@@ -64,3 +64,17 @@ else if (usersOrder.status === ProductShippingStatus.DELIVERED) {
 else {
     console.log('❓ YOUR PRODUCT IS UNKNOWN , PLEASE CONTACT CUSTOMER SUPPORT');
 }
+function combine(input1, input2) {
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        var result = input1 + input2;
+        return result;
+    }
+    else {
+        var result = input1.toString() + input2.toString();
+        return result;
+    }
+}
+var combinedAges = combine(30, 26);
+console.log('AGES ===> ', combinedAges);
+var combinedNames = combine('Pourya', 'Soleimani');
+console.log('NAMES ===> ', combinedNames);
