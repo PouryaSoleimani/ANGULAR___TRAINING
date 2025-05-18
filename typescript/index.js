@@ -34,47 +34,17 @@ console.info('TUPLE 1', tupleExample2);
 tupleExample2 = [50, 'ali', false, 40];
 console.info('TUPLE 2', tupleExample2);
 // ENUMS --> Enum is a special "class" that represents a group of constants (unchangeable variables).
-var Categories;
-(function (Categories) {
-    Categories[Categories["TOP"] = 0] = "TOP";
-    Categories[Categories["PANTS"] = 1] = "PANTS";
-    Categories[Categories["SHOES"] = 2] = "SHOES";
-    Categories[Categories["CAPS"] = 3] = "CAPS";
-    Categories[Categories["SOCKS"] = 4] = "SOCKS";
-    Categories[Categories["GLOVES"] = 5] = "GLOVES";
-    Categories[Categories["JACKETS"] = 6] = "JACKETS";
-})(Categories || (Categories = {}));
-var myProduct = {
+var ProductShippingStatus;
+(function (ProductShippingStatus) {
+    ProductShippingStatus[ProductShippingStatus["PENDING"] = 0] = "PENDING";
+    ProductShippingStatus[ProductShippingStatus["SENT"] = 1] = "SENT";
+    ProductShippingStatus[ProductShippingStatus["DELIVERED"] = 2] = "DELIVERED";
+})(ProductShippingStatus || (ProductShippingStatus = {}));
+var usersOrder = {
     id: 1,
-    title: 'ADIDAS T-SHIRT',
-    price: 100,
-    description: 'This is a product',
-    category: Categories.GLOVES,
-    isSale: true,
+    status: ProductShippingStatus.PENDING,
+    totalPrice: 1500,
+    numberOfProducts: 5,
+    productName: 'Laptop',
+    userInfos: { name: 'Pourya', age: 25, address: 'Iran' },
 };
-switch (myProduct.category) {
-    case Categories.TOP:
-        console.log('This is a TOP');
-        break;
-    case Categories.PANTS:
-        console.log('This is a PANT}');
-        break;
-    case Categories.SHOES:
-        console.log('This is a SHOE');
-        break;
-    case Categories.CAPS:
-        console.log('This is a CAP');
-        break;
-    case Categories.SOCKS:
-        console.log('This is a SOCK');
-        break;
-    case Categories.GLOVES:
-        console.log('This is a GLOVE');
-        break;
-    case Categories.JACKETS:
-        console.log('This is a JACKET');
-        break;
-    default:
-        console.log('This is an UNKNOWN CATEGORY');
-        break;
-}
