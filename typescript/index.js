@@ -95,3 +95,7 @@ function showOrderStatus(status) {
     console.log("%c YOUR ORDER STATUS IS  : \" ".concat(status, " \""), 'color : orange');
 }
 showOrderStatus('PENDING');
+var addFunction = function (n1, n2) {
+    return n1 + n2;
+};
+console.log(addFunction(5, 10));

@@ -116,3 +116,10 @@ function showOrderStatus(status: 'PENDING' | 'SENT' | 'DELIVERED' | 'CANCELLED')
 }
 
 showOrderStatus('PENDING');
+
+// FUNCTION TYPES --> A function type is a type that represents a function.
+type AddFn = (a: number, b: number) => number;
+const addFunction: AddFn = (n1: number, n2: number) => {
+  return n1 + n2;
+};
+console.log(addFunction(5, 10));
