@@ -13,7 +13,7 @@ function add(num1, num2, isShow, resultText) {
     }
 }
 console.log(add(5, 2, true, 'RESULT IS'));
-//^ ARRAYS
+// ARRAYS
 var myHobbies = ['Sports', 'Cooking', 'Coding'];
 for (var _i = 0, myHobbies_1 = myHobbies; _i < myHobbies_1.length; _i++) {
     var hobby = myHobbies_1[_i];
@@ -25,7 +25,7 @@ var exampleArray = [1, 5, 'HELLO', false];
 exampleArray[0] = true;
 exampleArray[1] = 'REZA';
 exampleArray[2] = 10;
-//^  TUPLES --> Cannot use other value types instead of the specified types
+// TUPLES --> Cannot use other value types instead of the specified types
 var tupleExample = ['hello', 10, true];
 tupleExample[0] = 'world';
 console.info(tupleExample);
@@ -33,7 +33,7 @@ var tupleExample2 = [20, 'pourya', true, 30];
 console.info('TUPLE 1', tupleExample2);
 tupleExample2 = [50, 'ali', false, 40];
 console.info('TUPLE 2', tupleExample2);
-//^ ENUMS --> Enum is a special "class" that represents a group of constants (unchangeable variables).
+// ENUMS --> Enum is a special "class" that represents a group of constants (unchangeable variables).
 var ProductShippingStatus;
 (function (ProductShippingStatus) {
     ProductShippingStatus[ProductShippingStatus["PENDING"] = 0] = "PENDING";
@@ -78,7 +78,7 @@ var combinedAges = combine(30, 26);
 console.log('AGES ===> ', combinedAges);
 var combinedNames = combine('Pourya', 'Soleimani');
 console.log('NAMES ===> ', combinedNames);
-//^ LITERALS TYPES --> A literal type is a type that is known to be one of a specific set of values.
+// LITERALS TYPES --> A literal type is a type that is known to be one of a specific set of values.
 function combine2(input1, input2, resultConversion) {
     var result;
     if ((typeof input1 === 'number' && typeof input2 === 'number') || resultConversion === 'as-number') {
@@ -99,7 +99,11 @@ var addFunction = function (n1, n2) {
     return n1 + n2;
 };
 console.log(addFunction(5, 10));
+// FUNCTION WITH VOID TYPE
 function printResult(num) {
     console.log('Result : ' + num);
 }
 printResult(addFunction(5, 12));
+var combineValues = addFunction;
+console.log('COMBINED VALUE OUTPUT ===>', combineValues(8, 8));
+console.log(typeof combineValues);
