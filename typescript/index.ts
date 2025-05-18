@@ -89,7 +89,7 @@ function combine(input1: Combinable, input2: Combinable) {
   } else {
     const result = input1.toString() + input2.toString();
     return result;
-   }
+  }
 }
 
 const combinedAges = combine(30, 26);
