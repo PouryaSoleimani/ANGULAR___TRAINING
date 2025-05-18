@@ -107,3 +107,5 @@ printResult(addFunction(5, 12));
 var combineValues = addFunction;
 console.log('COMBINED VALUE OUTPUT ===>', combineValues(8, 8));
 console.log(typeof combineValues);
+//UNKNOW TYPE
+var userInput;
