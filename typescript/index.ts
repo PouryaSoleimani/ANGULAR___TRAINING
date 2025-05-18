@@ -124,6 +124,7 @@ const addFunction: AddFn = (n1: number, n2: number) => {
 };
 console.log(addFunction(5, 10));
 
+// FUNCTION WITH VOID TYPE
 function printResult(num: number): void {
   console.log('Result : ' + num);
 }
