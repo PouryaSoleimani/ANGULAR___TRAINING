@@ -108,4 +108,9 @@ var combineValues = addFunction;
 console.log('COMBINED VALUE OUTPUT ===>', combineValues(8, 8));
 console.log(typeof combineValues);
 //UNKNOW TYPE
-var userInput;
+var userInput1 = 5;
+var userInput2 = 5;
+var string1 = userInput1;
+var string2 = userInput2;
+userInput1.slice(0, 5);
+userInput2.slice(0, 1);

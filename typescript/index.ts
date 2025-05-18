@@ -136,4 +136,11 @@ console.log('COMBINED VALUE OUTPUT ===>', combineValues(8, 8));
 console.log(typeof combineValues);
 
 //UNKNOW TYPE
-let userInput: unknown;
+let userInput1: unknown = 5;
+let userInput2: any = 5;
+
+let string1: string = userInput1;
+let string2: string = userInput2;
+
+userInput1.slice(0, 5);
+userInput2.slice(0, 1);
