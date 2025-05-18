@@ -80,7 +80,7 @@ if (usersOrder.status === ProductShippingStatus.PENDING) {
 //x UNION TYPES --> A union type is a type formed from two or more other types, representing values that may be any one of those types.
 
 // We use the | symbol to separate each type.
-type Combinable = number | string;
+type Combinable = number | string; // this is also a typeAlisases
 
 function combine(input1: Combinable, input2: Combinable) {
   if (typeof input1 === 'number' && typeof input2 === 'number') {
@@ -89,7 +89,7 @@ function combine(input1: Combinable, input2: Combinable) {
   } else {
     const result = input1.toString() + input2.toString();
     return result;
-  }
+   }
 }
 
 const combinedAges = combine(30, 26);
@@ -110,3 +110,9 @@ function combine2(input1: number | string, input2: number | string, resultConver
 }
 console.log('%c NUMBER OUTPUT ====> ', 'color : hotpink', combine2(30, 26, 'as-number'));
 console.log('%c TEXT OUTPUT ====>', 'color : cornflowerblue', combine2('Pourya', 'Soleimani', 'as-text'));
+
+function showOrderStatus(status: 'PENDING' | 'SENT' | 'DELIVERED' | 'CANCELLED') {
+  console.log(`%c YOUR ORDER STATUS IS  : " ${status} "`, 'color : orange');
+}
+
+showOrderStatus('PENDING');

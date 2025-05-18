@@ -91,3 +91,7 @@ function combine2(input1, input2, resultConversion) {
 }
 console.log('%c NUMBER OUTPUT ====> ', 'color : hotpink', combine2(30, 26, 'as-number'));
 console.log('%c TEXT OUTPUT ====>', 'color : cornflowerblue', combine2('Pourya', 'Soleimani', 'as-text'));
+function showOrderStatus(status) {
+    console.log("%c YOUR ORDER STATUS IS  : \" ".concat(status, " \""), 'color : orange');
+}
+showOrderStatus('PENDING');
