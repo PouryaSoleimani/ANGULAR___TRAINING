@@ -77,7 +77,7 @@ if (usersOrder.status === ProductShippingStatus.PENDING) {
   console.log('❓ YOUR PRODUCT IS UNKNOWN , PLEASE CONTACT CUSTOMER SUPPORT');
 }
 
-// UNION TYPES --> A union type is a type formed from two or more other types, representing values that may be any one of those types.
+//x UNION TYPES --> A union type is a type formed from two or more other types, representing values that may be any one of those types.
 
 // We use the | symbol to separate each type.
 type Combinable = number | string;
@@ -97,3 +97,14 @@ console.log('AGES ===> ', combinedAges);
 
 const combinedNames = combine('Pourya', 'Soleimani');
 console.log('NAMES ===> ', combinedNames);
+
+// LITERALS TYPES --> A literal type is a type that is known to be one of a specific set of values.
+function combine2(input1: number | string, input2: number | string, resultConversion: 'as-number' | 'as-text') {
+  let result;
+  if ((typeof input1 === 'number' && typeof input2 === 'number') || resultConversion === 'as-number') {
+    result = +input1 + +input2;
+  } else {
+    result = input1.toString() + input2.toString();
+  }
+  return result;
+}

@@ -78,3 +78,14 @@ var combinedAges = combine(30, 26);
 console.log('AGES ===> ', combinedAges);
 var combinedNames = combine('Pourya', 'Soleimani');
 console.log('NAMES ===> ', combinedNames);
+// LITERALS TYPES --> A literal type is a type that is known to be one of a specific set of values.
+function combine2(input1, input2, resultConversion) {
+    var result;
+    if ((typeof input1 === 'number' && typeof input2 === 'number') || resultConversion === 'as-number') {
+        result = +input1 + +input2;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
+}
