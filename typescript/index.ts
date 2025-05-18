@@ -48,6 +48,7 @@ enum ProductShippingStatus {
   PENDING,
   SENT,
   DELIVERED,
+  CANCELLED,
 }
 const usersOrder: {
   id: number;
@@ -58,7 +59,7 @@ const usersOrder: {
   userInfos: { name: string; age: number; address: string };
 } = {
   id: 1,
-  status: ProductShippingStatus.SENT,
+  status: ProductShippingStatus.DELIVERED,
   totalPrice: 1500,
   numberOfProducts: 5,
   productName: 'Laptop',
@@ -68,6 +69,10 @@ if (usersOrder.status === ProductShippingStatus.PENDING) {
   console.log('⌛ YOUR PRODUCT IS PENDING');
 } else if (usersOrder.status === ProductShippingStatus.SENT) {
   console.log('🚚 YOUR PRODUCT IS SENT');
-} else {
+} else if (usersOrder.status === ProductShippingStatus.CANCELLED) {
+  console.log('❌ YOUR PRODUCT IS CANCELLED');
+} else if (usersOrder.status === ProductShippingStatus.DELIVERED) {
   console.log('✅ YOUR PRODUCT IS DELIVERED');
+} else {
+  console.log('❓ YOUR PRODUCT IS UNKNOWN , PLEASE CONTACT CUSTOMER SUPPORT');
 }

@@ -39,10 +39,11 @@ var ProductShippingStatus;
     ProductShippingStatus[ProductShippingStatus["PENDING"] = 0] = "PENDING";
     ProductShippingStatus[ProductShippingStatus["SENT"] = 1] = "SENT";
     ProductShippingStatus[ProductShippingStatus["DELIVERED"] = 2] = "DELIVERED";
+    ProductShippingStatus[ProductShippingStatus["CANCELLED"] = 3] = "CANCELLED";
 })(ProductShippingStatus || (ProductShippingStatus = {}));
 var usersOrder = {
     id: 1,
-    status: ProductShippingStatus.SENT,
+    status: ProductShippingStatus.DELIVERED,
     totalPrice: 1500,
     numberOfProducts: 5,
     productName: 'Laptop',
@@ -54,6 +55,12 @@ if (usersOrder.status === ProductShippingStatus.PENDING) {
 else if (usersOrder.status === ProductShippingStatus.SENT) {
     console.log('🚚 YOUR PRODUCT IS SENT');
 }
-else {
+else if (usersOrder.status === ProductShippingStatus.CANCELLED) {
+    console.log('❌ YOUR PRODUCT IS CANCELLED');
+}
+else if (usersOrder.status === ProductShippingStatus.DELIVERED) {
     console.log('✅ YOUR PRODUCT IS DELIVERED');
+}
+else {
+    console.log('❓ YOUR PRODUCT IS UNKNOWN , PLEASE CONTACT CUSTOMER SUPPORT');
 }
