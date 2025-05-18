@@ -42,9 +42,18 @@ var ProductShippingStatus;
 })(ProductShippingStatus || (ProductShippingStatus = {}));
 var usersOrder = {
     id: 1,
-    status: ProductShippingStatus.PENDING,
+    status: ProductShippingStatus.SENT,
     totalPrice: 1500,
     numberOfProducts: 5,
     productName: 'Laptop',
     userInfos: { name: 'Pourya', age: 25, address: 'Iran' },
 };
+if (usersOrder.status === ProductShippingStatus.PENDING) {
+    console.log('⌛ YOUR PRODUCT IS PENDING');
+}
+else if (usersOrder.status === ProductShippingStatus.SENT) {
+    console.log('🚚 YOUR PRODUCT IS SENT');
+}
+else {
+    console.log('✅ YOUR PRODUCT IS DELIVERED');
+}
