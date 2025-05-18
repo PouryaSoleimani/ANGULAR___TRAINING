@@ -18,7 +18,7 @@ function add(num1: number, num2: number, isShow: boolean, resultText: string) {
 
 console.log(add(5, 2, true, 'RESULT IS'));
 
-//^ ARRAYS
+// ARRAYS
 const myHobbies = ['Sports', 'Cooking', 'Coding'];
 
 for (const hobby of myHobbies) {
@@ -32,7 +32,7 @@ exampleArray[0] = true;
 exampleArray[1] = 'REZA';
 exampleArray[2] = 10;
 
-//^  TUPLES --> Cannot use other value types instead of the specified types
+// TUPLES --> Cannot use other value types instead of the specified types
 let tupleExample: [string, number, boolean] = ['hello', 10, true];
 tupleExample[0] = 'world';
 
@@ -43,7 +43,7 @@ console.info('TUPLE 1', tupleExample2);
 tupleExample2 = [50, 'ali', false, 40];
 console.info('TUPLE 2', tupleExample2);
 
-//^ ENUMS --> Enum is a special "class" that represents a group of constants (unchangeable variables).
+// ENUMS --> Enum is a special "class" that represents a group of constants (unchangeable variables).
 enum ProductShippingStatus {
   PENDING,
   SENT,
@@ -77,7 +77,7 @@ if (usersOrder.status === ProductShippingStatus.PENDING) {
   console.log('❓ YOUR PRODUCT IS UNKNOWN , PLEASE CONTACT CUSTOMER SUPPORT');
 }
 
-//^ UNION TYPES --> A union type is a type formed from two or more other types, representing values that may be any one of those types.
+// UNION TYPES --> A union type is a type formed from two or more other types, representing values that may be any one of those types.
 
 // We use the | symbol to separate each type.
 type Combinable = number | string; // this is also a typeAlisases
@@ -98,7 +98,7 @@ console.log('AGES ===> ', combinedAges);
 const combinedNames = combine('Pourya', 'Soleimani');
 console.log('NAMES ===> ', combinedNames);
 
-//^ LITERALS TYPES --> A literal type is a type that is known to be one of a specific set of values.
+// LITERALS TYPES --> A literal type is a type that is known to be one of a specific set of values.
 function combine2(input1: number | string, input2: number | string, resultConversion: 'as-number' | 'as-text') {
   let result: number | string;
   if ((typeof input1 === 'number' && typeof input2 === 'number') || resultConversion === 'as-number') {
@@ -117,7 +117,7 @@ function showOrderStatus(status: 'PENDING' | 'SENT' | 'DELIVERED' | 'CANCELLED')
 
 showOrderStatus('PENDING');
 
-//^ FUNCTION TYPES --> A function type is a type that represents a function.
+// FUNCTION TYPES --> A function type is a type that represents a function.
 type AddFn = (a: number, b: number) => number;
 const addFunction: AddFn = (n1: number, n2: number) => {
   return n1 + n2;
